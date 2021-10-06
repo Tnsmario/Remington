@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="./main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <title>Remington</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="main-text">
+        <h1 class="big-title">
+          <a href="./main.html" class="anchor-big-title">Remington</a>
+        </h1>
+      </div>
+      <nav class="navbar">
+        <ul class="navbar-links">
+          <li><a href="./main.html" class="link">Home</a></li>
+          <li><a href="./about.html" class="link">About</a></li>
+          <li><a href="#prices" class="link">Services</a></li>
+          <li><a href="#contact" class="link">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="slideshow-section">
+      <!-- Slideshow container -->
+      <div class="slideshow-container">
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img
+            src="./img/pexels-valeria-boltneva-617967.jpg"
+            style="width: 100%"
+          />
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="./img/pexels-pixabay-161280.jpg" style="width: 100%" />
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="./img/pexels-pixabay-235734.jpg" style="width: 100%" />
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br />
+
+      <!-- The dots/circles -->
+      <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </section>
+    <section class="home-section">
+      <p class="p first-p">Welcome to</p>
+      <p class="p second-p">Remington funeral services and crematorium</p>
+      <p class="story-title" style="text-align: center">Our Story</p>
+      <div class="story-container">
+        <p class="story first-part-of-story">
+          The Appalachian Mountains are the oldest in the world, providing this
+          area with a climate, culture, and beauty that cannot be found anywhere
+          else. It is here that Remington Funeral Services are located, taking
+          advantage of a beautiful area surrounded by majestic mountains
+          watching over us.
+        </p>
+        <p class="story second-part-of-story">
+          At the end of life’s journey, we should all look back and celebrate
+          the memories which determine who we are. The staff of Remington
+          Funeral Services are dedicated to treating each person entrusted to
+          us, with respect and dignity. We offer a wide variety of funeral
+          options, each designed to meet the needs of the individual, realizing
+          that each person we serve is beautiful and unique.
+        </p>
+        <p class="story third-part-of-story">
+          Remington Funeral Services is committed to serving Timis County and
+          the surrounding areas with fast, efficient, and courteous service. Our
+          facility is totally new and state of the art, yet we recognize and
+          encourage the local traditions and values. We hope to provide funeral
+          service which will allow our families to recognize and rejoice in
+          lives well spent. While in our funeral home, we hope each person feels
+          comfortable and "at home". We hope to have adequate representation
+          from local artists and craftsmen, celebrating our rich and varied
+          mountain culture.
+        </p>
+      </div>
+    </section>
+    <section class="services-section" id="prices">
+      <div class="price1">
+        <p class="name-price1">Basic Coffin</p>
+        <span class="actual-price">$600</span>
+        <p class="price1-p">Simple and classic coffin</p>
+        <p class="price1-p">with beautiful finishes</p>
+        <p class="price1-p">and low in price.</p>
+        <div class="button-container">
+          <button class="price-button">Submit</button>
+        </div>
+      </div>
+      <div class="price2">
+        <p class="name-price2">Regular Coffin</p>
+        <span class="actual-price2">$799</span>
+        <p class="price2-p">Fine wood created</p>
+        <p class="price2-p">by our specialists</p>
+        <p class="price2-p">more money but comfortable</p>
+        <div class="button-container">
+          <button class="price-button">Submit</button>
+        </div>
+      </div>
+      <div class="price3">
+        <p class="name-price3">Exclusive Coffin</p>
+        <span class="actual-price3">$1199</span>
+        <p class="price3-p">The most expensive from</p>
+        <p class="price3-p">our shop created by</p>
+        <p class="price3-p">one of the best designers in the world</p>
+        <div class="button-container">
+          <button class="price-button">Submit</button>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="container">
+        <div style="text-align: center">
+          <h2>Contact Us</h2>
+          <p>Swing by for a cup of coffee, or leave us a message:</p>
+        </div>
+        <div class="row">
+          <div class="column"></div>
+          <div class="column">
+            <form action="/action_page.php">
+              <label for="fname">First Name</label>
+              <input
+                type="text"
+                id="fname"
+                name="firstname"
+                placeholder="Your name.."
+              />
+              <label for="lname">Last Name</label>
+              <input
+                type="text"
+                id="lname"
+                name="lastname"
+                placeholder="Your last name.."
+              />
+              <label for="country">Country</label>
+              <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+              </select>
+              <label for="subject">Subject</label>
+              <textarea
+                id="subject"
+                name="subject"
+                placeholder="Write something.."
+                style="height: 170px"
+              ></textarea>
+              <input type="submit" value="Submit" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./slideshow.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

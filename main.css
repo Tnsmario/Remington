@@ -1,0 +1,365 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  overflow-x: hidden;
+}
+/* HEADER SECTION */
+
+.main-header {
+  background-color: #000000;
+  min-width: 100%;
+}
+.main-text {
+  min-height: 13vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.big-title {
+  font-weight: 400;
+  font-size: 68px;
+  text-transform: uppercase;
+}
+
+.main-text a {
+  font-family: "times new roman", times, serif;
+  color: #eadcbb;
+  text-decoration: none;
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  height: 55px;
+}
+.navbar-links {
+  list-style: none;
+  width: 100vw;
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+.navbar a {
+  font-family: Helvetica;
+  text-decoration: none;
+  color: #eadcbb;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+.link {
+  transition: 0.3s;
+}
+.image-container {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-section {
+  margin-top: 10rem;
+}
+.p {
+  font-family: "Roboto Condensed", sans-serif;
+  text-align: center;
+  font-weight: 900;
+  min-width: 100%;
+}
+
+/* SERVICES SECTION */
+.services-section {
+  width: 100vw;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.name-price1,
+.name-price2,
+.name-price3 {
+  border-bottom: 1px solid black;
+  background-color: rgb(145, 144, 144);
+  height: 4vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.actual-price,
+.actual-price2,
+.actual-price3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.price1-p,
+.price2-p,
+.price3-p {
+  text-align: center;
+  margin-top: 15px;
+}
+.price-button {
+  outline: none;
+  border: none;
+  width: 100%;
+  height: 40px;
+  font-size: 18px;
+  background-color: rgb(255, 189, 66);
+  cursor: pointer;
+  margin-top: 25px;
+}
+.button-container {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+.price1,
+.price3 {
+  border: 2px solid black;
+  height: 350px;
+  width: 300px;
+}
+.price2 {
+  border: 2px solid black;
+  margin: 0 20px 0 20px;
+  height: 350px;
+  width: 300px;
+}
+
+/*  STORY SECTION  */
+.story-title {
+  color: #ff8c52;
+  margin-top: 5rem;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 30px;
+}
+.story-container {
+  text-align: center;
+}
+.story {
+  font-size: 25px;
+}
+.second-part-of-story {
+  margin: 40px 0 40px 0;
+}
+.first-p {
+  font-size: 40px;
+}
+.second-p {
+  font-size: 40px;
+}
+
+/* ABOUT US SECTION */
+
+.our-hisotry-image {
+  display: block;
+  float: left;
+  height: 137px;
+  width: 250px;
+  margin: 10px;
+}
+.centered-about-us-cont {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 7rem;
+}
+.about-us-first-cont,
+.our-history-cont {
+  margin: 35px;
+  width: 60vw;
+  min-height: 17vh;
+  box-shadow: 0px 15px 10px -15px #111;
+}
+.about-us-h1,
+.our-history-h1 {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #2e5f79;
+  font-weight: 600;
+}
+.about-us-p,
+.our-history-p {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+}
+
+/* CONTACT US SECTION */
+
+/* Style inputs */
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #04aa6d;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* ANIMATIONS AND HOVER SECTION */
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.anchor-big-title:hover {
+  color: #eadcbb;
+}
+.link:hover {
+  color: #c55f5f;
+}
+
+@media screen and (max-width: 750px) {
+  #prices {
+    flex-wrap: wrap;
+    margin-bottom: 32em;
+  }
+  .price2 {
+    margin: 1rem;
+  }
+}
